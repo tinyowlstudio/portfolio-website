@@ -473,6 +473,22 @@ label {
     height: 250px;
 }
 
+/************************************* 
+meet app page
+*************************************/
+
+.meet-content{
+    display: flex;
+}
+
+.meet-content__left{
+
+}
+
+.meet-content__right{
+    
+}
+
 /****************** MEDIA QUERY ******************/
 
 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tiny Owl Studio — Meet App</title>
+    <link rel="icon" type="images" href="../img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-------------Nav bar--------------------->
+            <nav>
+                <!-------------Logo Home--------------------->
+                <a href="../index.html" class="navbar-logo" role="button"><img src="../img/logo.svg" alt="This is an owl logo" width="100px" height="auto"></a>
+                <!-------------Navbar Links--------------------->
+                <div class="navbar-links">
+                    <a href="about.html" class="navbar-links__item" role="button">About</a>
+                    <a href="contact.html" class="navbar-links__item" role="button">Contact</a> 
+                </div>
+            </nav>
+        </header>
+        <!-------------Page Content--------------------->
+        <div class="meet-content">
+            <div class="meet-content__left">
+                <img src="../img/meet-app-512.png">
+                <img src="../img/meet1.jpg">
+            </div>
+            <div class="meet-content__right">
+                <h1>Meet App</h1>
+                <a href="https://github.com/Alioran/meet">Github Repository</a>
+                <p>This is a React app that will allow users to find events and details of those events in specified cities. This app was built using React and Javascript, with Unit, Integration, User Acceptance and End-to-End Testing included in the process. Google Calendar API and Authorization is used to verify the user before getting data with serverless toolkit provided by AWS Lambda. The app is also able to be used offline with stored data from the user's previous visit, and can be downloaded from the Chrome browser as an application for your desktop or mobile device.</p>
+                <b>NOTE: This is a technical coding project rather than a design project. Minimal design was used, but may be integrated later.</b>
+                <h3 class="features">Features</h3>
+                <ul>
+                    <li>Uses Google Calendars as it's database</li>
+                    <li>Authorizes using Google API and OAuth</li>
+                    <li>Search events by city</li>
+                    <li>Change the number of events that are displayed</li>
+                    <li>Display details of events</li>
+                    <li>Keep loaded data while offline so that users can interact with the app without connection to the internet</li>
+                    <li>Charts on the percentage of event types that are available and how many are in which cities</li>
+                </ul>
+                <h3 class="tools">Tools Used</h3>
+                <ul>
+                    <li>React: To build the app structure</li>
+                    <li>Jester/Cucumber: For testing</li>
+                    <li>Puppeteer: Also for testing</li>
+                    <li>Google Calendar API and OAuth: For data and authorization</li>
+                    <li>Amazon Webservice(AWS Lambda): For serverless toolkit</li>
+                    <li>Atatus: For performance monitoring</li>
+                    <li>Rechart: For data visualization</li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-------------Footer Content--------------------->
+        <footer>
+            <div class="footer-copyright">© The Tiny Owl Studio</div>
+            <div class="footer-links">            
+                <a class="footer-links__item" href="#"><img src="../img/instagram_icon.svg" alt=""></a>
+                <a class="footer-links__item" href="#"><img src="../img/linkedin_business_network_social_icon.svg" alt=""></a>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="../js/tota11y.min.js"></script>
+</body>
+
+</html>
