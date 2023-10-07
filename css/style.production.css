@@ -173,10 +173,20 @@ all pages
             box-sizing: border-box;
 }
 
+:root {
+    --text-lightyellow: rgb(239, 238, 214);
+    --text-midblue: rgb(94, 122, 147);
+    --bg-darkblue: rgb(41, 53, 72);
+    --button-blue: rgb(61, 112, 163);
+    --buttonhover-darkblue: rgb(57, 62, 110);
+    --link-aqua: rgb(106, 196, 192);
+    --border-stroke: solid .5px var(--text-lightyellow);
+}
+
 body {
-    background-color: rgb(41, 53, 72);
+    background-color: var(--bg-darkblue);
     font-size: 1.2em;
-    color: rgb(239, 238, 214);
+    color: var(--text-lightyellow);
 }
 
 .container {
@@ -196,21 +206,17 @@ h1 {
 .button {
     font-size: 1em;
     font-weight: 700;
-    color: rgb(239, 238, 214);
-    background-color: rgb(61, 112, 163);
+    color: var(--text-lightyellow);
+    background-color: var(--button-blue);
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
     margin-top: 10px;
 }
 
-.button:hover {
-    background-color: rgb(57, 62, 110);
-    cursor: pointer;
-}
-
+.button:hover,
 .button:focus {
-    background-color: rgb(57, 62, 110);
+    background-color: var(--buttonhover-darkblue);
     cursor: pointer;
 }
 
@@ -218,7 +224,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: rgb(41, 53, 72);
+    background-color: var(--bg-darkblue);
 }
 
 nav {
@@ -236,7 +242,7 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-bottom: solid .5px rgb(239, 238, 214);
+    border-bottom: var(--border-stroke);
 }
 
 .navbar-logo {
@@ -257,20 +263,17 @@ nav {
     gap: 50px;
 }
 
-.navbar-links__item {
-    color: rgb(106, 196, 192);
-}
-
+.navbar-links__item,
 a {
-    color: rgb(106, 196, 192);
+    color: var(--link-aqua);
 }
 
 .navbar-links__item:hover {
-    color: rgb(239, 238, 214);
+    color: var(--text-lightyellow);
 }
 
 .navbar-links__item.active {
-    color: rgb(239, 238, 214);
+    color: var(--text-lightyellow);
 }
 
 .navbar-links__item,
@@ -284,7 +287,7 @@ a {
 
 footer {
     padding: 20px 0;
-    border-top: solid .5px rgb(239, 238, 214);
+    border-top: var(--border-stroke);
 
     display: -webkit-box;
 
@@ -297,7 +300,7 @@ footer {
 }
 
 .footer-copyright {
-    color: rgb(94, 122, 147);
+    color: var(--text-midblue);
     font-size: 0.8em;
     font-weight: 200;
 }
@@ -435,14 +438,10 @@ about page
     padding-top: 20px;
 }
 
-.about-grid__item:first-child {
-    font-weight: 700;
-    border-bottom: solid .5px rgb(239, 238, 214)
-}
-
+.about-grid__item:first-child,
 .about-grid__item:nth-child(2) {
     font-weight: 700;
-    border-bottom: solid .5px rgb(239, 238, 214)
+    border-bottom: var(--border-stroke)
 }
 
 /************************************* 
@@ -458,7 +457,7 @@ label {
 }
 
 .input-area {
-    background-color: rgb(239, 238, 214);
+    background-color: var(--text-lightyellow);
     border: none;
     border-radius: 5px;
     width: 500px;
@@ -478,15 +477,39 @@ meet app page
 *************************************/
 
 .meet-content{
+    margin: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .meet-content__left{
+    width: 40%;
+    margin-top: 25px;
+}
 
+.meet-content__left > img{
+    width: 100%;
+    border-radius: 20px;
 }
 
 .meet-content__right{
-    
+    width: 60%;
+    margin-left: 30px;
+}
+
+.meet-content__right > h1 {
+    margin-bottom: 5px;
+}
+
+.meet-content__right > p {
+    padding-top: 20px;
+}
+
+.meet-content__right > h3 {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    border-bottom: var(--border-stroke);
 }
 
 /****************** MEDIA QUERY ******************/
