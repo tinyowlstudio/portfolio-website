@@ -242,7 +242,7 @@ home page
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
 }
@@ -250,7 +250,7 @@ home page
 .portfolio-grid__item {
     border-radius: 20px;
     overflow: hidden;
-    height: 300px;
+    height: 500px;
     animation: appear_up 1.5s ease-out;
 }
 
@@ -278,7 +278,7 @@ about page
     height: 900px;
     overflow: hidden;
     position: relative;
-    height: 430px;
+    height: 95%;
     background-image: url(../img/IMG_4801.JPG);
     background-repeat: no-repeat;
     background-position: right;
@@ -331,6 +331,19 @@ label {
     font-size: 1em;
 }
 
+.icons{
+    display: flex;
+}
+.icons__item img {
+    width: auto;
+    width: 75px;
+}
+
+.icons__item:first-child{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
 #email {
     height: 30px;
 }
@@ -340,41 +353,80 @@ label {
 }
 
 /************************************* 
-meet app page
+portfolio pages
 *************************************/
 
-.meet-content{
+
+.portfolio-content{
     margin: 30px 0;
     display: flex;
 }
 
-.meet-content__left{
+.games{
+    flex-wrap: wrap;
+}
+
+
+.portfolio-content__left{
     width: 40%;
     margin-top: 25px;
 }
 
-.meet-content__left > img{
+
+.portfolio-content__left > img{
     width: 100%;
     border-radius: 20px;
 }
 
-.meet-content__right{
+
+.portfolio-content__right{
     width: 60%;
     margin-left: 30px;
 }
 
-.meet-content__right > h1 {
+
+.portfolio-content__right > h1 {
     margin-bottom: 5px;
 }
 
-.meet-content__right > p {
+.portfolio-content__right > p {
     padding-top: 20px;
 }
 
-.meet-content__right > h3 {
+.portfolio-content__right > h3 {
     margin-top: 40px;
     margin-bottom: 5px;
     border-bottom: var(--border-stroke);
+}
+
+.tab-spacer{
+    width: 40%;
+}
+
+.tab-bar{
+    display: flex;
+    width: 60%;
+    padding-left: 17px;
+}
+
+.tab-bar > * {
+    padding: 10px 10px 10px 10px;
+    margin-right: 15px;
+    border: var(--button-blue) 1px solid;
+    border-radius: 10px;
+}
+
+.tab-bar > .active{
+    font-weight: 900;
+    background-color: var(--button-blue);
+}
+
+.tab-section__react, .tab-section__angular, .tab-section__api{
+display: none;
+}
+
+.active{
+    display: flex;
 }
 
 /****************** MEDIA QUERY ******************/
@@ -397,12 +449,36 @@ small screens
     }
 
     .portfolio-grid {
-        grid-template-columns: 1fr 1fr;
-        margin-left: 7%;
+        display: block;
+        margin-left: 10%;
     }
 
     .portfolio-grid__item {
-        height: 300px;
+        height: 400px;
+        margin: 20px 0;
+    }
+
+
+    /************************************* 
+    portfolio pages
+    *************************************/
+
+    .tab-spacer{
+        width: 50%;
+    }
+
+    .tab-bar{
+        width: 50%;
+    }
+
+    .portfolio-content__left{
+        width: 50%;
+        margin-top: 25px;
+    }
+    
+    .portfolio-content__right{
+        width: 50%;
+        margin-left: 30px;
     }
 }
 
@@ -438,14 +514,9 @@ tablet
         width: 60%;
     }
 
-    .portfolio-grid {
-        display: block;
-        margin-left: 10%;
-    }
 
     .portfolio-grid__item {
         height: 400px;
-        margin: 20px 0;
     }
 
     /************************************* 
@@ -473,6 +544,34 @@ tablet
         padding: 20px 0;
     }
 
+    /************************************* 
+    portfolio pages
+    *************************************/
+    .tab-spacer{
+        width: 100%;
+    }
+
+    .tab-bar{
+        width: 100%;
+        padding: 0;
+    }
+
+    .portfolio-content__left{
+        width: 100%;
+    }
+    
+    .portfolio-content__right{
+        width: 100%;
+        margin: 0;
+    }
+
+    .portfolio-content{
+        display: block;
+    }
+
+    .active{
+        display: block;
+    }
     /************************************* 
     contact page
     *************************************/

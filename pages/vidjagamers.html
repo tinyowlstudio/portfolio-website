@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tiny Owl Studio — Meet App</title>
+    <link rel="icon" type="images" href="../img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-------------Nav bar--------------------->
+            <nav>
+                <!-------------Logo Home--------------------->
+                <a href="../index.html" class="navbar-logo" role="button"><img src="../img/logo.svg" alt="This is an owl logo" width="100px" height="auto"></a>
+                <!-------------Navbar Links--------------------->
+                <div class="navbar-links">
+                    <a href="about.html" class="navbar-links__item" role="button">About</a>
+                    <a href="contact.html" class="navbar-links__item" role="button">Contact</a> 
+                </div>
+            </nav>
+        </header>
+        <!-------------Page Content--------------------->
+        <div class="portfolio-content games">
+            <!-------------Tab Bar--------------------->
+            <div class="tab-spacer"></div>
+            <div class="tab-bar">
+                <div class="tab-bar__react active" id="tabReact">React Ver.</div>
+                <div class="tab-bar__angular" id="tabAngular">Angular Ver.</div>
+                <div class="tab-bar__api" id="tabAPI">Game API</div>
+            </div>
+<!-------------Tab Sections--------------------->
+            <div class="tab-section">
+                <!-------------React App--------------------->
+                <div class="tab-section__react active">
+                    <div class="portfolio-content__left">
+                        <img src="../img/vidjagamers/vidjagamers_react1.jpg">
+                        <img src="../img/vidjagamers/vidjagamers_react2.jpg">
+                        <img src="../img/vidjagamers/vidjagamers_react3.jpg">
+                    </div>
+                    <div class="portfolio-content__right">
+                        <h1>Vidja Gamers — React Ver.</h1>
+                        <a href="https://github.com/Alioran/vidjagamers-client">Github Repository</a><br><br>
+                        This is an app that will allow users to view video games. They can register, login, and manage their user info and their favorite video games. Games themselves have a descriptions on the video game itself, including developers, release year, and genres. A search function is also included to help users filter and find the game they want to look at and add or remove from their favorites list.
+
+User and game info are stored on an API, and the app itself accesses said API so long as a JWT token is correct. Passwords are also encrypted on the API. The two databases were made specifically for this app.
+<br><br>
+<a href="https://vidjagamers.netlify.app/">Check the live app</a>
+                        <h3 class="features">Features</h3>
+                        <ul>
+                            <li>Registering a user</li>
+                            <li>Logging in and out</li>
+                            <li>Storing data to local storage (for both authorization and displaying info)</li>
+                            <li>Rerouting based on whether or not youre logged in or not</li>
+                            <li>Displaying the list of games provided by the API</li>
+                            <li>Favoriting/unfavoriting games</li>
+                            <li>Clicking for more details about the description, genre, and developer of a specific game</li>
+                            <li>Search games based on game title, genre, developer, release year, or series</li>
+                            <li>Displaying user's details (excluding their password)</li>
+                            <li>Allowing changes to user's information</li>
+                            <li>Deleting user from the database</li>
+                        </ul>
+                        <h3 class="tools">Tools Used</h3>
+                        <ul>
+                            <li>React: To start off with the app structure and import modules </li>
+                            <li>Redux: To store the user state</li>
+                            <li>React Bootstrap Components: To build game cards</li>
+                            <li>FontAwesome: For icons</li>
+                            <li>Parcel: To build the app</li>
+                        </ul>
+                    </div>
+                </div>
+<!-------------Angular App--------------------->
+                <div class="tab-section__angular">
+                    <div class="portfolio-content__left">
+                        <img src="../img/vidjagamers/vidjagamers_angular1.jpg">
+                        <img src="../img/vidjagamers/vidjagamers_angular2.jpg">
+                        <img src="../img/vidjagamers/vidjagamers_angular3.jpg">
+                    </div>
+                    <div class="portfolio-content__right">
+                        <h1>Vidja Gamers — Angular Ver.</h1>
+                        <a href="https://github.com/Alioran/vidjaGamers-angular">Github Repository</a><br><br>
+                        This uses the same backend API and endpoints, but uses Angular-CLI to build the app. It also uses both components and templates as per the Angular framework. While this isn't a one to one iteration of the React version, it carries the core functionalities that the original had. Base design work and functionality were also created with Angular Material and edited as per previous design.
+                        <br><br>
+<a href="https://alioran.github.io/vidjagames-angular-app/">Check the live app</a>
+                        <h3 class="features">Features</h3>
+                        <ul>
+                            <li>Registering a user</li>
+                            <li>Logging in and out</li>
+                            <li>Storing data to local storage (for both authorization and displaying info)</li>
+                            <li>Rerouting based on whether or not youre logged in or not</li>
+                            <li>Displaying the list of games provided by the API</li>
+                            <li>Favoriting/unfavoriting games</li>
+                            <li>Clicking for more details about the description, genre, and developer of a specific game</li>
+                            <li>Displaying user's details (excluding their password)</li>
+                            <li>Allowing changes to user's information</li>
+                            <li>Deleting user from the database</li>
+                        </ul>
+                        <h3 class="tools">Tools Used</h3>
+                        <ul>
+                            <li>Angular-CLI: To start off with the app structure and import modules </li>
+                            <li>Angular Material: To quickly build items with styling</li>
+                            <li>lite-server: For testing building</li>
+                            <li>TypeDoc: For documenation</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-------------Game API--------------------->
+                <div class="tab-section__api">
+                    <div class="portfolio-content__left">
+                        <img src="../img/vidjagamers/game_api1.jpg">
+                        <img src="../img/vidjagamers/game_api2.jpg">
+                    </div>
+                    <div class="portfolio-content__right">
+                        <h1>Game API</h1>
+                        <a href="https://github.com/Alioran/vidjaGamers-angular">Github Repository</a><br><br>
+                        This assignment introduced was a self built API hosted on Heroku with the database hosted on MongoDB.
+                        <br><br>
+                        This database includes both users and a collection of selected games. Future updates may use another API for a fuller library of games.
+                        <h3 class="features">Functions included</h3>
+                        <ul>
+                            <li>Registering/Deregistering a user</li>
+                            <li>Log a user in/out</li>
+                            <li>Update user info</li>
+                            <li>Fetch user information</li>
+                            <li>Fetch game information</li>
+                            <li>Fetch genre information</li>
+                            <li>Fetch all games of a certain genre</li>
+                            <li>Fetch developer information</li>
+                            <li>Fetch all games of a certain developer</li>
+                            <li>Fetch all games of a certain year</li>
+                            <li>Fetch all games of a certain series</li>
+                            <li>Fetch all games of a certain platform</li>
+                            <li>Fetch all featured games</li>
+                            <li>Set up of user and game schemas</li>
+                            <li>Password hashing</li>
+                            <li>Authentication</li>
+                        </ul>
+                        <h3 class="tools">Tools Used/Introduced</h3>
+                        <ul>
+                            <li>node.js: To run Javascript</li>
+                            <li>npm: To get and manage packages</li>
+                            <li>JWT Tokens: To create authentication tokens</li>
+                            <li>Express: For HTTP methods (GET, POST, PUT, DELETE)</li>
+                            <li>Morgan: For HTTP middleware</li>
+                            <li>Postman: To test endpoints</li>
+                            <li>PostgreSQL: To store databases in SQL, only used temporarily</li>
+                            <li>MongoDB Atlas: To store databases in NoSQL, used currently </li>
+                            <li>bcrypt: To hash passwords</li>
+                            <li>Heroku: Stores and executes the API</li>
+                            <li>Mongoose: For user and game schemas</li>
+                            <li>JSDoc: For documenation</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-------------Footer Content--------------------->
+        <footer>
+            <div class="footer-copyright">© The Tiny Owl Studio</div>
+            <div class="footer-links">            
+                <a class="footer-links__item" href="#"><img src="../img/Logo_of_Twitter.svg" alt=""></a>
+                <a class="footer-links__item" href="https://www.linkedin.com/in/thetinyowl"><img src="../img/linkedin_business_network_social_icon.svg" alt=""></a>
+
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
