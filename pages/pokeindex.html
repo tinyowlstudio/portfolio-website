@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tiny Owl Studio — About</title>
+    <title>Tiny Owl Studio — Meet App</title>
     <link rel="icon" type="images" href="../img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
@@ -22,49 +22,51 @@
                 <a href="../index.html" class="navbar-logo" role="button"><img src="../img/logo.svg" alt="This is an owl logo" width="100px" height="auto"></a>
                 <!-------------Navbar Links--------------------->
                 <div class="navbar-links">
-                    <a href="#" class="navbar-links__item active" role="button">About</a>
+                    <a href="about.html" class="navbar-links__item" role="button">About</a>
                     <a href="contact.html" class="navbar-links__item" role="button">Contact</a> 
                 </div>
             </nav>
         </header>
-
         <!-------------Page Content--------------------->
-        <div class="about-content">
-            <div class="content-leftcolumn">
-                <div class="about-content__image">
-                </div>
+        <div class="portfolio-content">
+            <div class="portfolio-content__left">
+                <img src="../img/pokeindex/pokeindex_1.jpg">
+                <img src="../img/pokeindex/pokeindex_2.jpg">
+                <img src="../img/pokeindex/pokeindex_3.jpg">
             </div>
-            <div class="content-rightcolumn">
-                <h1>About myself</h1>
-                <p>I'm a recent graduate with a BFA in graphic design, but have some experience with illustration and coding.<br><br>
-                Skills listed below relate to all my skills, but this portfolio website only for <b>full stack development</b>.
-                If you're looking for my <b>graphic design</b> portfolio, you can check it out <a href="https://www.thetinyowlstudio.com/">here</a>!</p>
-                <div class="about-grid">
-                    <div class="about-grid__item">Skill</div>
-                    <div class="about-grid__item">Proficiency</div>
-                    <div class="about-grid__item">Adobe Suite</div>
-                    <div class="about-grid__item">Advanced</div>
-                    <div class="about-grid__item">Microsoft Office</div>
-                    <div class="about-grid__item">Intermediate</div>
-                    <div class="about-grid__item">HTML5</div>
-                    <div class="about-grid__item">Intermediate</div>
-                    <div class="about-grid__item">CSS</div>
-                    <div class="about-grid__item">Intermediate</div>
-                    <div class="about-grid__item">JavaScript</div>
-                    <div class="about-grid__item">Intermediate</div>
-                    <div class="about-grid__item">Illustration</div>
-                    <div class="about-grid__item">Intermediate</div>
-                    <div class="about-grid__item">Graphic Design</div>
-                    <div class="about-grid__item">Advanced</div>
-                </div>
+            <div class="portfolio-content__right">
+                <h1>PokeIndex</h1>
+                <a href="https://github.com/Alioran/pokedex">Github Repository</a>
+                This simple app shows the first 151 Pokémon, their genus, types, and base stats. This assignment taught the building blocks of Javscript.
+
+Users can view all the pokemon on the page and click on them for more information within a modal. Animations were added for a smoother transition, and users can use the search bar to look up a specific pokemon.
+
+No bootstrap or jquery was used for this. This app was made purely from Javascript. Bootstrap and jquery was used temporarily but removed when more in-depth customization began. It also uses pokeapi (https://pokeapi.co/) for all the data it displays.
+                <h3 class="features">Features</h3>
+                <ul>
+                    <li>Uses Google Calendars as it's database</li>
+                    <li>Authorizes using Google API and OAuth</li>
+                    <li>Search events by city</li>
+                    <li>Change the number of events that are displayed</li>
+                    <li>Display details of events</li>
+                    <li>Keep loaded data while offline so that users can interact with the app without connection to the internet</li>
+                    <li>Charts on the percentage of event types that are available and how many are in which cities</li>
+                </ul>
+                <h3 class="tools">Tools Used</h3>
+                <ul>
+                    <li>Javascript: To build the app structure</li>
+                    <li>PokeAPI: For testing</li>
+                    <li>Bootstrap (removed): Also for testing</li>
+                    <li>jquery(removed): For data and authorization</li>
+                </ul>
             </div>
+            
         </div>
         <!-------------Footer Content--------------------->
         <footer>
             <div class="footer-copyright">© The Tiny Owl Studio</div>
             <div class="footer-links">            
                 <a class="footer-links__item" href="#"><img src="../img/Logo_of_Twitter.svg" alt=""></a>
-                
                 <a class="footer-links__item" href="https://www.linkedin.com/in/thetinyowl"><img src="../img/linkedin_business_network_social_icon.svg" alt=""></a>
             </div>
 

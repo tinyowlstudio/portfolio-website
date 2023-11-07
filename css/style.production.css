@@ -476,37 +476,37 @@ label {
 meet app page
 *************************************/
 
-.meet-content{
+.portfolio-content{
     margin: 30px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-.meet-content__left{
+.portfolio-content__left{
     width: 40%;
     margin-top: 25px;
 }
 
-.meet-content__left > img{
+.portfolio-content__left > img{
     width: 100%;
     border-radius: 20px;
 }
 
-.meet-content__right{
+.portfolio-content__right{
     width: 60%;
     margin-left: 30px;
 }
 
-.meet-content__right > h1 {
+.portfolio-content__right > h1 {
     margin-bottom: 5px;
 }
 
-.meet-content__right > p {
+.portfolio-content__right > p {
     padding-top: 20px;
 }
 
-.meet-content__right > h3 {
+.portfolio-content__right > h3 {
     margin-top: 40px;
     margin-bottom: 5px;
     border-bottom: var(--border-stroke);
