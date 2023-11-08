@@ -33,6 +33,24 @@
                 </div>
             </nav>
         </header>
+        <!-------------Modals--------------------->
+        <!-- About Modal -->
+<!-- <div id="aboutModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="aboutModalClose">&times;</span>
+        <h2>About</h2>
+        <p>Add your about content here.</p>
+    </div>
+</div> -->
+
+<!-- Contact Modal -->
+<!-- <div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="contactModalClose">&times;</span>
+        <h2>Contact</h2>
+        <p>Add your contact content here.</p>
+    </div>
+</div> -->
         <!-------------Page Content--------------------->
         <div class="home-content">
             <div class="home-content__left-column">
@@ -168,18 +186,42 @@
                     </svg>
                     Hi! Welcome to my full-stack development portfolio as part of the CareerFoundry curriculum. Please feel free to take a look!
                     <br><br>
-                    If you're looking for my <b>graphic design</b> portfolio, you can check it out <a href="https://www.thetinyowlstudio.com/">here</a>!
-                    <a href="pages/contact.html" class="button">Contact me</a>
+                    If you're looking for my <b>graphic design</b> portfolio, you can check it out below!
+                    <a href="https://www.thetinyowlstudio.com/" class="button first">Graphic Design Portfolio</a>
+                    <a href="pages/contact.html" class="button second">Contact me</a>                    
                 </div>
 
             </div>
 
             <div class="home-content__right-column">
                 <div class="portfolio-grid">
-                    <div class="portfolio-grid__item"><a href="pages/pokeindex.html"><img src="img/pokeindex/pokeindex_1.jpg" alt="Meet App"></a></div>
-                    <div class="portfolio-grid__item"><a href="pages/vidjagamers.html"><img src="img/vidjagamers/vidjagamers_react1.jpg" alt="Meet App"></a></div>
-                    <div class="portfolio-grid__item"><a href="pages/meetapp.html"><img src="img/meet/meet1.jpg" alt="Meet App"></a></div>
-                    <div class="portfolio-grid__item"><a href="pages/chat.html"><img src="img/chat/chat_1.jpg" alt="Meet App"></a></div>
+                    <div class="portfolio-grid__item">
+                        <a href="pages/pokeindex.html"><img src="img/pokeindex/pokeindex_1.jpg" alt="Meet App">
+                            <div class="portfolio-overlay">
+                                <h2>PokeIndex</h2>
+                                <p>API, JavaScript</p>
+                            </div>
+                        </a></div>
+                    <div class="portfolio-grid__item">
+                        <a href="pages/vidjagamers.html"><img src="img/vidjagamers/vidjagamers_react1.jpg" alt="Meet App">
+                            <div class="portfolio-overlay">
+                                <h2>Vidja Gamers</h2>
+                                <p>React, Redux, Angular, MongoDB, Heroku</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-grid__item"><a href="pages/meetapp.html"><img src="img/meet/meet1.jpg" alt="Meet App">
+                        <div class="portfolio-overlay">
+                            <h2>Meet</h2>
+                            <p>React, Google Calender, AWS, Jester, Cucumber, Puppeter</p>
+                        </div>
+                    </a></div>
+                    <div class="portfolio-grid__item"><a href="pages/chat.html"><img src="img/chat/chat_1.jpg" alt="Meet App">
+                        <div class="portfolio-overlay">
+                            <h2>Simple Chat App</h2>
+                            <p>React Native, Expo, Puppeter, Gifted Chat</p>
+                        </div>
+                    </a></div>
 
                 </div>
             </div>
@@ -189,14 +231,15 @@
         <footer>
             <div class="footer-copyright">© The Tiny Owl Studio</div>
             <div class="footer-links">
-                <a class="footer-links__item" href="#"><img src="img/Logo_of_Twitter.svg" alt=""></a>
+                <a class="footer-links__item" href="https://twitter.com/gkdesigndev"><img src="img/Logo_of_Twitter.svg" alt=""></a>
+                <a class="footer-links__item" href="https://medium.com/@gkdesigndev"><img src="img/Medium_(website)_logo.svg" alt=""></a>
                 <a class="footer-links__item" href="https://www.linkedin.com/in/thetinyowl"><img src="img/linkedin_business_network_social_icon.svg" alt=""></a>
             </div>
 
         </footer>
     </div>
 
-    <script src="js/tota11y.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

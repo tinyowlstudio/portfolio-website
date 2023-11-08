@@ -118,6 +118,10 @@ h1 {
     margin-top: 10px;
 }
 
+a.button.second{
+    margin-top: 10px;
+}
+
 .button:hover,
 .button:focus {
     background-color: var(--buttonhover-darkblue);
@@ -252,12 +256,38 @@ home page
     overflow: hidden;
     height: 500px;
     animation: appear_up 1.5s ease-out;
+    position: relative;
 }
 
 .portfolio-grid__item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.portfolio-grid__item:hover {
+    filter: brightness(70%); 
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: white;
+    text-align: center;
+}
+
+.portfolio-grid__item:hover .portfolio-overlay {
+    opacity: 1; 
 }
 
 
@@ -337,11 +367,14 @@ label {
 .icons__item img {
     width: auto;
     width: 75px;
+    margin-right: 30px;
 }
 
 .icons__item:first-child{
     margin-top: 10px;
-    margin-right: 20px;
+}
+.icons__item:nth-child(2){
+    margin-top: 20px;
 }
 
 #email {
@@ -454,8 +487,40 @@ small screens
     }
 
     .portfolio-grid__item {
-        height: 400px;
+        height: 500px;
         margin: 20px 0;
+    }
+
+    .portfolio-grid__item {
+        position: relative;
+    }
+
+    .portfolio-overlay {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 35%; 
+        background: rgba(0, 0, 0, 0.77);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        padding: 0 10px;
+    }
+
+    .portfolio-overlay > h2{
+        margin-bottom: 5px;
+    }
+
+    .portfolio-grid__item .portfolio-overlay {
+        opacity: 1; 
+    }
+
+    .portfolio-grid__item:hover .portfolio-overlay {
+        opacity: 1;
     }
 
 
@@ -590,11 +655,7 @@ mobile
     all pages 
     *************************************/
     * {
-        font-size: 0.95em;
-    }
-
-    h1 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .container {
