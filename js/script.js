@@ -1,3 +1,5 @@
+// For Tabs
+// =============================================================
 const tabReact = document.getElementById("tabReact");
 const tabAngular = document.getElementById("tabAngular");
 const tabAPI = document.getElementById("tabAPI");
@@ -48,3 +50,40 @@ tabAPI.addEventListener("click", () => {
     tabBarItemAngular.classList.remove("active");
     tabBarItemAPI.classList.add("active");
 });
+
+
+
+
+// // For Modals
+// // =============================================================
+// // Get the About and Contact buttons
+// const aboutButton = document.getElementById('aboutButton');
+// const contactButton = document.getElementById('contactButton');
+
+// // Get the About and Contact modals
+// const aboutModal = document.getElementById('aboutModal');
+// const contactModal = document.getElementById('contactModal');
+
+// // Get the close buttons
+// const aboutModalClose = document.getElementById('aboutModalClose');
+// const contactModalClose = document.getElementById('contactModalClose');
+
+// // Open About Modal when "Who am I?" button is clicked
+// aboutButton.addEventListener('click', () => {
+//     aboutModal.style.display = 'block';
+// });
+
+// // Open Contact Modal when "Contact me" button is clicked
+// contactButton.addEventListener('click', () => {
+//     contactModal.style.display = 'block';
+// });
+
+// // Close About Modal
+// aboutModalClose.addEventListener('click', () => {
+//     aboutModal.style.display = 'none';
+// });
+
+// // Close Contact Modal
+// contactModalClose.addEventListener('click', () => {
+//     contactModal.style.display = 'none';
+// });

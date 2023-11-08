@@ -7,7 +7,7 @@
     <title>Tiny Owl Studio — Meet App</title>
     <link rel="icon" type="images" href="../img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.production.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,31 +28,35 @@
             </nav>
         </header>
         <!-------------Page Content--------------------->
-        <div class="portfolio-content">
-            <div class="portfolio-content__left">
-                <img src="../img/chat/chat_5.jpg">
-                <img src="../img/chat/chat_1.jpg">
-                <img src="../img/chat/chat_2.jpg">
+        <div class="meet-content">
+            <div class="meet-content__left">
+                <img src="../img/meet-app-512.png">
+                <img src="../img/meet1.jpg">
             </div>
-            <div class="portfolio-content__right">
+            <div class="meet-content__right">
                 <h1>Meet App</h1>
-                <a href="https://github.com/Alioran/chat-app">Github Repository</a><br><br>
-                This chat app is a platform for both iOS and Android, and allow users to send messages, images and locations to friends and family. The UI will also be customizable, and data is stored both online and offline.
+                <a href="https://github.com/Alioran/meet">Github Repository</a>
+                <p>This is a React app that will allow users to find events and details of those events in specified cities. This app was built using React and Javascript, with Unit, Integration, User Acceptance and End-to-End Testing included in the process. Google Calendar API and Authorization is used to verify the user before getting data with serverless toolkit provided by AWS Lambda. The app is also able to be used offline with stored data from the user's previous visit, and can be downloaded from the Chrome browser as an application for your desktop or mobile device.</p>
+                <b>NOTE: This is a technical coding project rather than a design project. Minimal design was used, but may be integrated later.</b>
                 <h3 class="features">Features</h3>
                 <ul>
-                    <li>Login with anonymous authorization</li>
-                    <li>Chat live with another person</li>
-                    <li>Share photos from library/camera</li>
-                    <li>Share location</li>
-                    <li>Customize UI colors</li>
+                    <li>Uses Google Calendars as it's database</li>
+                    <li>Authorizes using Google API and OAuth</li>
+                    <li>Search events by city</li>
+                    <li>Change the number of events that are displayed</li>
+                    <li>Display details of events</li>
+                    <li>Keep loaded data while offline so that users can interact with the app without connection to the internet</li>
+                    <li>Charts on the percentage of event types that are available and how many are in which cities</li>
                 </ul>
                 <h3 class="tools">Tools Used</h3>
                 <ul>
-                    <li>React Native: To build the app structure</li>
-                    <li>Expo/Expo Go: For testing</li>
+                    <li>React: To build the app structure</li>
+                    <li>Jester/Cucumber: For testing</li>
                     <li>Puppeteer: Also for testing</li>
-                    <li>Gifted Chat: For data and authorization</li>
-                    <li>Android Studio: For serverless toolkit</li>
+                    <li>Google Calendar API and OAuth: For data and authorization</li>
+                    <li>Amazon Webservice(AWS Lambda): For serverless toolkit</li>
+                    <li>Atatus: For performance monitoring</li>
+                    <li>Rechart: For data visualization</li>
                 </ul>
             </div>
             
@@ -61,10 +65,8 @@
         <footer>
             <div class="footer-copyright">© The Tiny Owl Studio</div>
             <div class="footer-links">            
-                <a class="footer-links__item" href="https://twitter.com/gkdesigndev"><img src="../img/Logo_of_Twitter.svg" alt=""></a>
-                <a class="footer-links__item" href="https://medium.com/@gkdesigndev"><img src="../img/Medium_(website)_logo.svg" alt=""></a>
-                <a class="footer-links__item" href="https://www.linkedin.com/in/thetinyowl"><img src="../img/linkedin_business_network_social_icon.svg" alt=""></a>
-
+                <a class="footer-links__item" href="#"><img src="../img/instagram_icon.svg" alt=""></a>
+                <a class="footer-links__item" href="#"><img src="../img/linkedin_business_network_social_icon.svg" alt=""></a>
             </div>
 
         </footer>
